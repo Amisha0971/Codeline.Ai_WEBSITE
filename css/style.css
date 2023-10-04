@@ -3185,7 +3185,10 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+}
+   
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -3334,7 +3337,7 @@ input[type="button"].btn-block {
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
-  background-size: 100% 100%; }
+  background-size: 100% 80%; }
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
@@ -3359,8 +3362,8 @@ input[type="button"].btn-block {
       .navbar-expand-sm .navbar-nav .dropdown-menu {
         position: absolute; }
       .navbar-expand-sm .navbar-nav .nav-link {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem; }
+        padding-right: 0.3rem;
+        padding-left: 0.3rem; }
     .navbar-expand-sm > .container,
     .navbar-expand-sm > .container-fluid {
       -ms-flex-wrap: nowrap;
@@ -7309,7 +7312,7 @@ h1, h2, h3, h4, h5,
   z-index: 3;
   background: #fff !important;
   position: relative; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 981.88px) {
     .ftco-navbar-light {
       background: #1b212c !important;
       position: relative;
