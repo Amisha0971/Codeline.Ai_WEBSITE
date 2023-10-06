@@ -1979,6 +1979,17 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
       justify-content: center; }
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
+/* styles/light-theme.css */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* styles/dark-theme.css */
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
 
 .btn {
   display: inline-block;
@@ -5004,7 +5015,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #343a40 !important; }
+  background-color: #920092 !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -7294,10 +7305,10 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #920092; }
+  color: white; }
   a:hover {
     text-decoration: none;
-    color: #920092; }
+    color:white; }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
