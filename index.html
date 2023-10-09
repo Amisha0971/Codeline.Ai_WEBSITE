@@ -117,24 +117,46 @@
               <div class="full-wrap d-flex ftco-animate">
                 <div class="one-third order-last p-5" style="background-color: purple;">
                   <span>Know what you're after?</span>
-                  <div class="wrapper" style="display: flex;">
-                    <div class="static-txt" style="color: #fff; font-size: 60px; font-weight: 400;">I'm a</div>
-                    <ul class="dynamic-txts" style="margin-left: 15px; height: 90px; line-height: 90px; overflow: hidden;">
-                      <li style="list-style: none; color: #FC6D6D; font-size: 60px; font-weight: 500; position: relative; top: 0; animation: slide 12s steps(4) infinite;">
-                        <span style="position: relative; margin: 5px 0; line-height: 90px;">YouTuber</span>
-                      </li>
-                      <li style="list-style: none; color: #FC6D6D; font-size: 60px; font-weight: 500; position: relative; top: 0; animation: slide 12s steps(4) infinite;">
-                        <span style="position: relative; margin: 5px 0; line-height: 90px;">Designer</span>
-                      </li>
-                      <li style="list-style: none; color: #FC6D6D; font-size: 60px; font-weight: 500; position: relative; top: 0; animation: slide 12s steps(4) infinite;">
-                        <span style="position: relative; margin: 5px 0; line-height: 90px;">Developer</span>
-                      </li>
-                      <li style="list-style: none; color: #FC6D6D; font-size: 60px; font-weight: 500; position: relative; top: 0; animation: slide 12s steps(4) infinite;">
-                        <span style="position: relative; margin: 5px 0; line-height: 90px;">Freelancer</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <p>Just Browsing? <a href="course.html"> See all courses</a></p>
+                  <h3>I want to study</h3>
+                  <form action="#" class="course-search-form">
+                    <div class="form-group d-flex">
+                      <input type="text" class="form-control" id="animated-input" placeholder="">
+                        <!--<div class="wrapper"style="display: flex;">
+                            <div class="static-txt" style="color: #fff; font-size: 10px; font-weight: 100;">I'm a</div>
+                            <ul class="dynamic-txts" style="margin-left: 15px; height: 20px; line-height: 20px; overflow: hidden; list-style: none; padding: 0;">
+                                <li style="color: #FC6D6D; font-size: 10px; font-weight: 100; position: relative; top: 0; animation: slide 8s steps(4) infinite 2s;">
+                                    <span style="position: relative;">YouTuber</span>
+                                </li>
+                                <li style="color: #FC6D6D; font-size: 10px; font-weight: 100; position: relative; top: 0; animation: slide 8s steps(4) infinite 3s;">
+                                    <span style="position: relative;">Designer</span>
+                                </li>
+                                <li style="color: #FC6D6D; font-size: 10px; font-weight: 100; position: relative; top: 0; animation: slide 8s steps(4) infinite 5s;">
+                                    <span style="position: relative;">Developer</span>
+                                </li>
+                                <li style="color: #FC6D6D; font-size: 10px; font-weight: 100; position: relative; top: 0; animation: slide 8s steps(4) infinite 7s;">
+                                    <span style="position: relative;">Freelancer</span>
+                                </li>
+                            </ul>
+                        </div>--> 
+                        <input type="submit" value="Search" class="submit">
+                    </div>
+                </form>
+                
+                <script>
+                  const input = document.getElementById('animated-input');
+                  const placeholders = ["I'm Web Developer...", " I'm Web Designer..." , "I'm App Developer..." , "I'm App Designer..." ];
+                  let currentIndex = 0;
+          
+                  function animatePlaceholder() {
+                      input.setAttribute('placeholder', placeholders[currentIndex]);
+                      currentIndex = (currentIndex + 1) % placeholders.length;
+                  }
+          
+                  // Start the animation
+                  setInterval(animatePlaceholder, 2000); // Change the interval (in milliseconds) as needed
+              </script>
+              
+                <p>Just Browsing? <a href="course.html"> See all courses</a></p>
                 </div>
                 <div class="one-forth order-first img" style="background-image: url(images/image_1.jpg);"></div>
               </div>
